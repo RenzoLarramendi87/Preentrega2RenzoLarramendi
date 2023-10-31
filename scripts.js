@@ -69,7 +69,7 @@
 
 
 
-let products = [];
+let products = JSON.parse(localStorage.getItem("products")) || [];
 let total = 0;
 
 
@@ -79,12 +79,14 @@ function add(product, price) {
     products.push(product);
     total = total + price;
     document.getElementById("checkout").innerHTML = `Pagar $${total}`
+    saveLocal ();
 }
 
 function pay() {
     window.alert(products.join(",\n"));
 
 }
+
 
 
 function loguear()
@@ -105,4 +107,15 @@ else
 }
 
 }
+
+
+
+
+// set item
+const saveLocal = () => {
+    localStorage.setItem("products",JSON.stringify(products));
+};
+
+// get Item
+
 
