@@ -1,83 +1,111 @@
 body {
     margin: 0px;
-    background-color: aliceblue;
-    font-family: 'Young Serif', serif;
+   
 }
 
-button {
-    font-size: 16px;
-    text-align: center;
-    border-radius: 8px;
-    padding: 10px 20px;
+.nav-container{
+    position: sticky;
+    z-index: 3;
+    top: 0;
 }
 
 
-.page-nav {
-    background-color: #2196f3;
-    border: 1px solid black;
-    position: relative;
-}
-
-.page-nav h1 {
-    margin: 20px;
-}
-
-.button-checkout {
-    background-color: white;
-    color: black;
-    border: 2px solid #008cba;/*Blue */
-    transition-duration: 0.4s;
-    position: absolute;
-    right: 15px;
-    bottom: 15px;
-}
-
-.button-checkout:hover {
-    background-color: #008cba;/*Blue */
-    color: white;
-}
-
-.page-content {
+.navbar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    height: 12vh;
+    background-color: rgb(187, 245, 245);
+}
+
+.navbar-logo {
+   justify-self: start;
+   margin-left: 20px;
+   color: #240202;
+   margin-top: 4vh;
+   cursor: pointer;
+}
+
+.ver-carrito {
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 3.5vh;
+    cursor: pointer;
     
 }
 
-.product-container {
-    margin: 15px;
-    padding: 2px 16px;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-    background-color: white;
+.banner {
+    background-color: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        
+     
 }
 
-
-.product-container:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0,0.2);
-}
-
-.product-container img {
-    width: 300px;
+.banner-container{
+    text-align: center;
+    padding: 15% 0;
 
 }
 
-.product-container h1{
-    margin-bottom: 10px;
-    margin-left: 15px;
+.banner h1{
+    margin: 0;
+    color: rgb(180, 31, 31);
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    font-size: 62px;
+    font-weight: bold;
 }
 
-.button-add {
-    background-color: white;
-    color: black;
-    border: 2px solid #4caf50;/*Green */
-    transition-duration: 0.4s;
-    position: absolute;
-    right: 15px;
-    bottom: 10px;
+.banner p {
+    font-size: 30px;
+    color: rgb(44, 111, 170);
+    opacity: 0.7;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+
 }
 
-.button-add:hover {
-    background-color: #4caf50;/*Green */
+
+.shop-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80 px;
+    margin-right: 80px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    
+}
+
+.card > img {
+   width: 90%;
+   height: 250px; 
+}
+
+.price {
+    color: grey;
+    font-size: 22px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
     color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+
+.card button:hover {
+    opacity: 0.7;
 }

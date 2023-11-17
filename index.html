@@ -5,62 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COOFFIEES</title>
     <link rel="stylesheet" href="style.css">
-    <script src="app.js"></script>
+    
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
 
 </head>
 <body>
-    <div class="page-nav">
-        <h1>Mi tienda</h1>
-        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+    <div class="nav-container">
+        <nav class="navbar">
+            <h1 class="navbar-logo">Mi tienda</h1>
+            <h1 class="ver-carrito" id="verCarrito"><img src="./img/carrito-de-compras.png" height="100px"></h1>
 
-    </div>
-   
-    <div class="page-content">
-        <div class="product-container">
-            <h3>Capuchino</h3>
-            <img src="./img/img1.jpg" alt="">
-            <h1>$100</h1>
-            <button class="button-add" onclick="add('product-1',100)">Agregar</button>
-        </div>
-          
-        <div class="product-container">
-            <h3>Espresso</h3>
-            <img src="./img/img2.jpg" alt="">
-            <h1>$120</h1>
-            <button class="button-add" onclick="add('product-2',120)">Agregar</button>
-        </div>       
-          
-        <div class="product-container">
-            <h3>Mocchiato</h3>
-            <img src="./img/img3.jpg" alt="">
-            <h1>$160</h1>
-            <button class="button-add" onclick="add('product-3',160)">Agregar</button>
-        </div>
-     
-        <div class="product-container">
-            <h3>Mocca</h3>
-            <img src="./img/img4.jpg" alt="">
-            <h1>$180</h1>
-            <button class="button-add" onclick="add('product-4',180)">Agregar</button>
-
-        </div>
-    </div>
-    
-    <form action="">
-        <h1>Login</h1>
-
-        <label for="">Usuario</label>
-        <input type="text" placeholder="Escriba su usuario" id="usuario">
-
-        <label for="">Contraseña</label>
-        <input type="password" placeholder="Escriba su contraseña" id="clave">
-
-        <input type="button" value="Entrar" onclick="loguear()">
-
+        </nav>    
         
-    </form>
 
+    </div>
+
+    <div class="banner">
+        <div class="banner-container">
+            <h1>COOFFIEES Shop</h1>
+            <p>El mejor lugar para conseguir tu cafe</p>
+            
+
+        </div>
+
+    </div>
+
+    <div id="shopContent" class="shop-content"></div>
+   
     
+    
+    
+    
+
+    <script src="app.js"></script>
 </body>
 </html>
