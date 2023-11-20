@@ -14,13 +14,13 @@ body {
     display: flex;
     justify-content: space-between;
     height: 12vh;
-    background-color: rgb(187, 245, 245);
+    background-color: #1b1b1b;
 }
 
 .navbar-logo {
    justify-self: start;
    margin-left: 20px;
-   color: #240202;
+   color: #fff;
    margin-top: 4vh;
    cursor: pointer;
 }
@@ -38,6 +38,7 @@ body {
     background-position: center;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+        url(https://www.bing.com/images/search?view=detailV2&ccid=J%2fWWxp1l&id=B3E244681AE84C2BFFCBDD03908BB0F6A5F1B58F&thid=OIP.J_WWxp1lydRVKH73d7twIAHaDk&mediaurl=https%3a%2f%2fstatic.vecteezy.com%2fsystem%2fresources%2fpreviews%2f000%2f540%2f916%2foriginal%2fvector-cafe-banner-alphabet-sign-marquee-light-bulb-vintage.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.27f596c69d65c9d455287ef777bb7020%3frik%3dj7Xxpfawi5AD3Q%26pid%3dImgRaw%26r%3d0&exph=3070&expw=6367&q=banner+cafe&simid=608048381934633010&FORM=IRPRST&ck=838C036CA5D36A0972AA50DA2EFB5C5A&selectedIndex=2&ajaxhist=0&ajaxserp=0);
         
      
 }
@@ -50,7 +51,7 @@ body {
 
 .banner h1{
     margin: 0;
-    color: rgb(180, 31, 31);
+    color: white;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
     font-size: 62px;
     font-weight: bold;
@@ -58,7 +59,7 @@ body {
 
 .banner p {
     font-size: 30px;
-    color: rgb(44, 111, 170);
+    color: white;
     opacity: 0.7;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
 
@@ -108,4 +109,63 @@ body {
 
 .card button:hover {
     opacity: 0.7;
+}
+
+
+.modal-container {
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    color: #fff;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+
+.modal-container::-webkit-scrollbar {
+    display: none;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #0a0909;
+    color: #fff;
+    width: 100%;
+}
+
+.modal-header-title {
+    justify-self: start;
+}
+
+.modal-header-button {
+    cursor: pointer;
+}
+
+.modal-container > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+    margin: 10px;
+}
+
+.modal-container > div > img {
+    height: 120px;
+    width: 120px;
+}
+
+
+.total-content {
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
 }
