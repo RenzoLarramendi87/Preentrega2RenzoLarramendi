@@ -3,9 +3,8 @@ const productos = [
         id:1,
         nombre: "Capuchino", 
         precio: 100,
-        img:
-        "https://www.istockphoto.com/es/foto/filtro-de-caf%C3%A9-gm1033432408-276752868?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&utm_content=https%3A%2F%2Fpixabay.com%2Fes%2Fimages%2Fsearch%2Fcaf%25C3%25A9%2F&utm_term=caf%C3%A9",
-
+        img:"https://www.pexels.com/es-es/foto/dos-tazas-de-cafe-en-la-mesa-2575835/",
+        cantidad: 1,
     },
         
     {
@@ -14,7 +13,7 @@ const productos = [
         precio: 120,
         img:
         "https://www.istockphoto.com/es/foto/concepto-de-caf%C3%A9-turco-taza-de-caf%C3%A9-con-granos-de-caf%C3%A9-sobre-fondo-de-madera-gm1301467250-393504774?utm_source=pixabay&utm_medium=affiliate&utm_campaign=SRP_image_sponsored&utm_content=https%3A%2F%2Fpixabay.com%2Fes%2Fimages%2Fsearch%2Fcaf%25C3%25A9%2F&utm_term=caf%C3%A9",
-
+        cantidad: 1,
     },
 
 
@@ -24,7 +23,7 @@ const productos = [
         precio: 160,
         img:
         "https://pixabay.com/es/photos/caf%C3%A9-bol%C3%ADgrafo-computadora-port%C3%A1til-2306471/",
-
+        cantidad: 1,
 
     },
        
@@ -34,5 +33,6 @@ const productos = [
         precio: 180,
         img:
         "https://pixabay.com/es/photos/taza-de-caf%C3%A9-caf%C3%A9-latido-del-coraz%C3%B3n-2317201/",
+        cantidad: 1,
     },    
 ];
