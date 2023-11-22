@@ -31,6 +31,7 @@
           <p>Cantidad: ${product.cantidad}</p>
           <span class="sumar"> + </span>
           <p>Total: ${product.cantidad * product.precio} $</p>
+          <span class="delete-product"> ❌ </span>
 
         
         `;
@@ -48,7 +49,7 @@
             pintarCarrito();
         });
 
-        let sumar = carritoContent.querySelector(".sumar")
+        let sumar = carritoContent.querySelector(".sumar");
 
         sumar.addEventListener("click", () =>{
            
@@ -57,17 +58,18 @@
             pintarCarrito();
         });
 
-        let eliminar = document.createElement("span");
 
-        eliminar.innerText = "❌";
-        eliminar.classList = "delete-product";
-        carritoContent.append(eliminar);
+        let eliminar = carritoContent.querySelector(".delete-product");
+
+        eliminar.addEventListener("click", () =>{
+           
+           eliminarProducto(product.id);
+           
+        });
 
 
-        eliminar.addEventListener("click", eliminarProducto);
-    });  
 
-
+    });
     const total = carrito.reduce((acc, el) => acc + el.precio * el.cantidad, 0);
 
     const totalBuying = document.createElement("div");
@@ -80,8 +82,10 @@
 verCarrito.addEventListener("click", pintarCarrito);
 
 
-const eliminarProducto = () => {
-    const foundId = carrito.find ((element) => element.id);
+const eliminarProducto = (id) => {
+    const foundId = carrito.find ((element) => element.id === id);
+
+    console.log(foundId);
 
 
     carrito = carrito.filter((carritoId) => {
@@ -105,4 +109,4 @@ const carritoCounter = () => {
     cantidadCarrito.innerText = JSON.parse(localStorage.getItem("carritoLength"));
 };
 
-carritoCounter();
+    carritoCounter();
